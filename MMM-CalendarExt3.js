@@ -698,7 +698,7 @@ Module.register('MMM-CalendarExt3', {
           }
         }
     )
-    }
+    },
 
     getTodayColor: function () {
         let now = new Date();
@@ -730,5 +730,5 @@ Module.register('MMM-CalendarExt3', {
         let thisWeek = Math.ceil((this.startOfWeek(date) - this.startOfWeek(start)) / oneWeek) + offset;
         let index = thisWeek % amount;
         return names[index];
-    },
+    }
 })
